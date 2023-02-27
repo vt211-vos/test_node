@@ -1,13 +1,11 @@
-// import express from "express"
-// import cors from 'cors'
 
-// const app = express();
-// app.use(cors({
-//     origin: '*'}));
+
 
 const  express = require("express")
+const cors = require('cors')
 const app = express();
-
+app.use(cors({
+    origin: '*'}));
 const data = [
     {
         'id': "1",
